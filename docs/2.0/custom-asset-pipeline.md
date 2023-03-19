@@ -144,6 +144,6 @@ Then add them to Avo using the `_pre_head.html.erb` partial (`rails generate avo
 ```erb
 # app/views/avo/partials/_pre_head.html.erb
 
-<%= javascript_pack_tag 'avo.custom' %>
+<%= javascript_pack_tag 'avo.custom', defer: true %>
 <%= stylesheet_pack_tag 'avo.custom', media: 'all' %>
 ```
